@@ -31,4 +31,17 @@ class GenreController extends Controller
 
         return view('genres.books', compact('genre', 'books', 'breadcrumbs'));
     }
+
+    public function show(Genre $genre)
+    {
+        $genre = Genre::findOrFail($genre->id);
+
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Genres' => route('genres.index'),
+            $genre->name => null,
+        ];
+
+        return view('genres.show', compact('genre', 'breadcrumbs'));
+    }
 }

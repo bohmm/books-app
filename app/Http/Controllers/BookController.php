@@ -18,4 +18,17 @@ class BookController extends Controller
 
         return view('books.index', compact('books', 'breadcrumbs'));
     }
+
+    public function show(Book $book)
+    {
+        $book = Book::findOrFail($book->id);
+
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Books' => route('books.index'),
+            $book->title => null,
+        ];
+
+        return view('books.show', compact('book', 'breadcrumbs'));
+    }
 }

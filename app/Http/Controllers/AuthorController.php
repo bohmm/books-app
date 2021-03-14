@@ -31,4 +31,17 @@ class AuthorController extends Controller
 
         return view('authors.books', compact('author', 'books', 'breadcrumbs'));
     }
+
+    public function show(Author $author)
+    {
+        $author = Author::findOrFail($author->id);
+
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Authors' => route('authors.index'),
+            $author->name => null,
+        ];
+
+        return view('authors.show', compact('author', 'breadcrumbs'));
+    }
 }

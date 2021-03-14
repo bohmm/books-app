@@ -76,7 +76,7 @@ class BookSeeder extends Seeder
 
         $book = Book::create([
             'title' => 'Carrie',
-            'slug' => 'Carrie',
+            'slug' => 'carrie',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
             'code' => '123-4567-89-7',
             'published_at' => '1974',
