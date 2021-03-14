@@ -68,7 +68,7 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                     <a href="{{ route('genres.show', $genre) }}" class="text-indigo-600 hover:text-indigo-900">Show</a>
                                                     <a href="#" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    <form action="{{ route('genres.destroy', $genre) }}" method="post" class="inline">
+                                                    <form onsubmit="return confirm('Do you really want to delete?');" action="{{ route('genres.destroy', $genre) }}" method="post" class="inline">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button class="text-pink-600 hover:text-pink-900">
