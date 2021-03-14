@@ -44,4 +44,11 @@ class AuthorController extends Controller
 
         return view('authors.show', compact('author', 'breadcrumbs'));
     }
+
+    public function destroy(Author $author)
+    {
+        $author->delete();
+
+        return back()->with('status', 'Author has been removed');
+    }
 }

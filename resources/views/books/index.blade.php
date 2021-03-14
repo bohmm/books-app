@@ -23,6 +23,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
+            <x-session-status class="mb-6" :status="session('status')" />
+
             @if ($books->count())
                 <div class="flex flex-col">
                     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -83,7 +85,13 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                     <a href="{{ route('books.show', $book) }}" class="text-indigo-600 hover:text-indigo-900">Show</a>
                                                     <a href="#" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    <a href="#" class="text-pink-600 hover:text-pink-900">Remove</a>
+                                                    <form action="{{ route('books.destroy', $book) }}" method="post" class="inline">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button class="text-pink-600 hover:text-pink-900">
+                                                            {{ __('Remove') }}
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -31,4 +31,11 @@ class BookController extends Controller
 
         return view('books.show', compact('book', 'breadcrumbs'));
     }
+
+    public function destroy(Book $book)
+    {
+        $book->delete();
+
+        return back()->with('status', 'Book has been removed');
+    }
 }

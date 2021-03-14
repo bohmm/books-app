@@ -44,4 +44,11 @@ class GenreController extends Controller
 
         return view('genres.show', compact('genre', 'breadcrumbs'));
     }
+
+    public function destroy(Genre $genre)
+    {
+        $genre->delete();
+
+        return back()->with('status', 'Genre has been removed');
+    }
 }
