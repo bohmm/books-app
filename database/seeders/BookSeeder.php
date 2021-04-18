@@ -18,6 +18,7 @@ class BookSeeder extends Seeder
             'title' => 'The Da Vinci Code',
             'slug' => 'the-da-vinci-code',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463592438l/30228538._SY475_.jpg',
             'code' => '123-4567-89-1',
             'published_at' => '2003',
         ]);
@@ -28,6 +29,7 @@ class BookSeeder extends Seeder
             'title' => 'The Hobbit',
             'slug' => 'the-hobbit',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907.jpg',
             'code' => '123-4567-89-2',
             'published_at' => '1937',
         ]);
@@ -38,6 +40,7 @@ class BookSeeder extends Seeder
             'title' => 'The Pillars of the Earth',
             'slug' => 'the-pillars-of-the-earth',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1576956100l/5043.jpg',
             'code' => '123-4567-89-3',
             'published_at' => '1989',
         ]);
@@ -48,6 +51,7 @@ class BookSeeder extends Seeder
             'title' => 'Dune',
             'slug' => 'dune',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458.jpg',
             'code' => '123-4567-89-4',
             'published_at' => '1965',
         ]);
@@ -58,6 +62,7 @@ class BookSeeder extends Seeder
             'title' => 'Harry Potter and the Philosopher\'s Stone',
             'slug' => 'harry-potter-and-the-philosophers-stone',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1170803558l/72193.jpg',
             'code' => '123-4567-89-5',
             'published_at' => '1997',
         ]);
@@ -68,6 +73,7 @@ class BookSeeder extends Seeder
             'title' => 'Twenty Thousand Leagues Under the Seas',
             'slug' => 'twenty-thousand-leagues-under-the-seas',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494979127l/33507.jpg',
             'code' => '123-4567-89-6',
             'published_at' => '1872',
         ]);
@@ -78,6 +84,7 @@ class BookSeeder extends Seeder
             'title' => 'Carrie',
             'slug' => 'carrie',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1166254258l/10592._SY475_.jpg',
             'code' => '123-4567-89-7',
             'published_at' => '1974',
         ]);
@@ -88,6 +95,7 @@ class BookSeeder extends Seeder
             'title' => 'Digital Fortress',
             'slug' => 'digital-fortress',
             'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas aliquet accumsan leo. Nulla quis diam. Maecenas libero. Etiam bibendum elit eget erat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Praesent id justo in neque elementum ultrices. Pellentesque pretium lectus id turpis. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Vivamus ac leo pretium faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium lectus id turpis.',
+            'book_cover_path' => 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360095966l/11125.jpg',
             'code' => '123-4567-89-8',
             'published_at' => '1998',
         ]);

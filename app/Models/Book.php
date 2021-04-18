@@ -16,6 +16,7 @@ class Book extends Model
         'title',
         'slug',
         'description',
+        'book_cover_path',
         'code',
         'published_at',
     ];

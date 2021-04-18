@@ -100,6 +100,15 @@
                                 {{ $book->slug }}
                             </dd>
                         </div>
+
+                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium text-gray-500">
+                                Cover
+                            </dt>
+                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                <img src="{{ $book->book_cover_path }}" alt="{{ $book->title }} cover" class="h-80">
+                            </dd>
+                        </div>
                     </dl>
                 </div>
             </div>

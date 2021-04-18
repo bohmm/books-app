@@ -18,6 +18,7 @@ class CreateBooksTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('description');
+            $table->text('book_cover_path')->nullable();
             $table->string('code');
             $table->year('published_at');
             $table->timestamps();
