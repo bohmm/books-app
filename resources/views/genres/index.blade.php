@@ -22,7 +22,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            
+
             <x-session-status class="mb-6" :status="session('status')" />
 
             <div class="flex justify-end">
@@ -31,7 +31,7 @@
                     {{ __('Add new genre') }}
                 </a>
             </div>
-            
+
 
             @if ($genres->count())
                 <div class="flex flex-col">
@@ -75,7 +75,7 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                     <a href="{{ route('genres.show', $genre) }}" class="text-indigo-600 hover:text-indigo-900">Show</a>
-                                                    <a href="#" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
+                                                    <a href="{{ route('genres.edit', $genre) }}" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
                                                     <form onsubmit="return confirm('Do you really want to delete?');" action="{{ route('genres.destroy', $genre) }}" method="post" class="inline">
                                                         @csrf
                                                         @method('DELETE')

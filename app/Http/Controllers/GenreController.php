@@ -68,6 +68,31 @@ class GenreController extends Controller
         return redirect()->route('genres.index');
     }
 
+    public function edit(Genre $genre)
+    {
+        $genre = Genre::findOrFail($genre->id);
+
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Genres' => route('genres.index'),
+            $genre->name => null,
+        ];
+
+        return view('genres.edit', compact('genre', 'breadcrumbs'));
+    }
+
+    public function update(Request $request, Genre $genre)
+    {
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required|unique:genres,slug,'.$genre->id,
+        ]);
+
+        $genre->update($request->only('name', 'slug'));
+
+        return redirect()->route('genres.index');
+    }
+
     public function destroy(Genre $genre)
     {
         $genre->delete();
