@@ -25,6 +25,13 @@
 
             <x-session-status class="mb-6" :status="session('status')" />
 
+            <div class="flex justify-end">
+                <a href="{{ route('authors.create') }}"
+                    class="inline-flex items-center mb-4 px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
+                    {{ __('Add new author') }}
+                </a>
+            </div>
+
             @if ($authors->count())
                 <div class="flex flex-col">
                     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -67,7 +74,7 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                     <a href="{{ route('authors.show', $author) }}" class="text-indigo-600 hover:text-indigo-900">Show</a>
-                                                    <a href="#" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
+                                                    <a href="{{ route('authors.edit', $author) }}" class="mx-2 text-indigo-600 hover:text-indigo-900">Edit</a>
                                                     <form onsubmit="return confirm('Do you really want to delete?');" action="{{ route('authors.destroy', $author) }}" method="post" class="inline">
                                                         @csrf
                                                         @method('DELETE')

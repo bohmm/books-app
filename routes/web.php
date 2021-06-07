@@ -15,8 +15,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
     Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
+    Route::get('/authors/create', [AuthorController::class, 'create'])->name('authors.create');
+    Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store');
     Route::get('/authors/{author:slug}/books', [AuthorController::class, 'books'])->name('authors.books');
     Route::get('/authors/{author:slug}', [AuthorController::class, 'show'])->name('authors.show');
+    Route::get('/authors/{author:slug}/edit', [AuthorController::class, 'edit'])->name('authors.edit');
+    Route::put('/authors/{author:slug}', [AuthorController::class, 'update'])->name('authors.update');
     Route::delete('/authors/{author:slug}', [AuthorController::class, 'destroy'])->name('authors.destroy');
 
     Route::get('/books', [BookController::class, 'index'])->name('books.index');

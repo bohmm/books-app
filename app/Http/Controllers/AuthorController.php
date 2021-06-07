@@ -45,6 +45,54 @@ class AuthorController extends Controller
         return view('authors.show', compact('author', 'breadcrumbs'));
     }
 
+    public function create()
+    {
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Authors' => route('authors.index'),
+            'Add new author' => null,
+        ];
+
+        return view('authors.create', compact('breadcrumbs'));
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required|unique:authors,slug',
+        ]);
+
+        Author::create($request->only('name', 'slug', 'description'));
+
+        return redirect()->route('authors.index');
+    }
+
+    public function edit(Author $author)
+    {
+        $author = Author::findOrFail($author->id);
+
+        $breadcrumbs = [
+            'Home' => route('dashboard'),
+            'Authors' => route('authors.index'),
+            $author->name => null,
+        ];
+
+        return view('authors.edit', compact('author', 'breadcrumbs'));
+    }
+
+    public function update(Request $request, Author $author)
+    {
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required|unique:authors,slug,'.$author->id,
+        ]);
+
+        $author->update($request->only('name', 'slug', 'description'));
+
+        return redirect()->route('authors.index');
+    }
+
     public function destroy(Author $author)
     {
         $author->delete();
