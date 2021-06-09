@@ -97,6 +97,6 @@ class GenreController extends Controller
     {
         $genre->delete();
 
-        return back()->with('status', 'Genre has been removed');
+        return redirect()->route('genres.index')->with('status', 'Genre has been removed');
     }
 }

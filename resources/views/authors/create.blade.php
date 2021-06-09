@@ -34,19 +34,19 @@
                         <!-- Name -->
                         <div>
                             <x-label for="name" :value="__('Name')" />
-                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" autofocus />
                         </div>
 
                         <!-- Slug -->
                         <div class="mt-4">
                             <x-label for="slug" :value="__('Slug')" />
-                            <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" :value="old('slug')" required autofocus />
+                            <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" :value="old('slug')" autofocus />
                         </div>
 
                         <!-- Description -->
                         <div class="mt-4">
                             <x-label for="description" :value="__('Description')" />
-                            <x-input id="description" class="block mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus />
+                            <textarea name="description" id="description" rows="5" class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{ old('description') }}</textarea>
                         </div>
 
                         <x-button class="mt-4">

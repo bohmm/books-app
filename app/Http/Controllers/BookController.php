@@ -36,6 +36,6 @@ class BookController extends Controller
     {
         $book->delete();
 
-        return back()->with('status', 'Book has been removed');
+        return redirect()->route('books.index')->with('status', 'Book has been removed');
     }
 }

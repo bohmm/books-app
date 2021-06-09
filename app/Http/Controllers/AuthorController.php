@@ -97,6 +97,6 @@ class AuthorController extends Controller
     {
         $author->delete();
 
-        return back()->with('status', 'Author has been removed');
+        return redirect()->route('authors.index')->with('status', 'Author has been removed');
     }
 }

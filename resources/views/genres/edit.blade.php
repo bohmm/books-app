@@ -35,13 +35,13 @@
                         <!-- Name -->
                         <div>
                             <x-label for="name" :value="__('Name')" />
-                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" value="{{ $genre->name ?? old('name') }}" required autofocus />
+                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" value="{{ old('name') ?? $genre->name }}" autofocus />
                         </div>
 
                         <!-- Slug -->
                         <div class="mt-4">
                             <x-label for="slug" :value="__('Slug')" />
-                            <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" value="{{ $genre->slug ?? old('slug') }}" required autofocus />
+                            <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" value="{{ old('slug') ?? $genre->slug }}" autofocus />
                         </div>
 
                         <x-button class="mt-4">
